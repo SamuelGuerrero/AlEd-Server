@@ -11,9 +11,13 @@ const port = process.env.PORT || 8080;
 
 //Middleware
 app.use(express.json());
-app.use(cors({
-  origin: 'https://aled-server.onrender.com/'
-}))
+app.use(
+  cors({
+    origin: "https://aled-server.onrender.com",
+    headers: ["Content-Type"],
+    credentials: true,
+  })
+);
 app.use("/api", userRoutes);
 
 //Routes
