@@ -10,10 +10,11 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 //Middleware
-//app.use(express.json());
+app.use(express.json());
 const whiteList = ["http://localhost:3000", "https://aled-server.onrender.com"];
 
 app.use(
+  express.json(),
   cors({
     origin: whiteList,
   })
