@@ -48,22 +48,21 @@ GET https://aled-server.onrender.com/api/users HTTP/1.1
 POST https://aled-server.onrender.com/api/users HTTP/1.1
 Content-Type: application/json
 
-
     {
-    "name": "Emma Proulx",
-    "profession": "Visual Designer",
+    "name": "Juan Perez",
+    "profession": "Ingeniero",
     "urlImage": "https://i.postimg.cc/25nkBqxG/Emma.jpg",
-    "age": 28,
-    "nationality": "Estadounidense",
+    "age": 23,
+    "nationality": "Mexicano",
     "height": "1.68",
     "telephoneNumber": "59-6823-2351",
-    "facebook": "Emma Proulx",
-    "twitter": "@menitrust",
-    "github": "Emma Proulx",
+    "facebook": "Juan Perez",
+    "twitter": "@juanitopz",
+    "github": "JuanPerez"
   }
 
 ###
-DELETE https://aled-server.onrender.com/api/users/64865e6fd3ecb12b06c44d64 HTTP/1.1
+DELETE https://aled-server.onrender.com/api/users/648771b1456af8df92d25c2e HTTP/1.1
 
 ###
 PUT https://aled-server.onrender.com/api/users/6482daf9ea9a9602b2d3d6fa HTTP/1.1
@@ -71,9 +70,9 @@ Content-Type: application/json
 
     {
     "name": "Lila Ramani",
-    "profession": "Gerente",
+    "profession": "Front End Developer",
     "urlImage": "https://i.postimg.cc/Pq1RJDtm/lila.jpg",
-    "age": 28,
+    "age": 30,
     "nationality": "Estadounidense",
     "height": "1.79",
     "telephoneNumber": "956-23-2344",
