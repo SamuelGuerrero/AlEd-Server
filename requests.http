@@ -27,16 +27,57 @@ Content-Type: application/json
 
     {
     "name": "Samuel Guerrero",
-    "profession": "Ingeniero",
+    "profession": "Singer",
     "urlImage": "https://i.postimg.cc/8Cc7X7SQ/Kevin.webp",
-    "age": 24,
-    "nationality": "Mexicano",
-    "height": "1.65",
-    "telephoneNumber": "953-278-5480",
-    "facebook": "Samuel Guerrero",
-    "twitter": "@itougn",
-    "github": "Samuel Guerrero"
+    "age": 35,
+    "nationality": "Australiano",
+    "height": "1.74",
+    "telephoneNumber": "47-2614-7162",
+    "facebook": "Kevin Parker",
+    "twitter": "@tameimpala",
+    "github": "Kevin Parker"
   }
 
 ###
 DELETE http://localhost:8080/api/users/64828647b12e6d5903494d6d HTTP/1.1
+
+###
+GET https://aled-server.onrender.com/api/users HTTP/1.1
+
+###
+POST https://aled-server.onrender.com/api/users HTTP/1.1
+Content-Type: application/json
+
+
+    {
+    "name": "Emma Proulx",
+    "profession": "Visual Designer",
+    "urlImage": "https://i.postimg.cc/25nkBqxG/Emma.jpg",
+    "age": 28,
+    "nationality": "Estadounidense",
+    "height": "1.68",
+    "telephoneNumber": "59-6823-2351",
+    "facebook": "Emma Proulx",
+    "twitter": "@menitrust",
+    "github": "Emma Proulx",
+  }
+
+###
+DELETE https://aled-server.onrender.com/api/users/64865e6fd3ecb12b06c44d64 HTTP/1.1
+
+###
+PUT https://aled-server.onrender.com/api/users/6482daf9ea9a9602b2d3d6fa HTTP/1.1
+Content-Type: application/json
+
+    {
+    "name": "Lila Ramani",
+    "profession": "Gerente",
+    "urlImage": "https://i.postimg.cc/Pq1RJDtm/lila.jpg",
+    "age": 28,
+    "nationality": "Estadounidense",
+    "height": "1.79",
+    "telephoneNumber": "956-23-2344",
+    "facebook": "Lila Ramani",
+    "twitter": "@somecrumb",
+    "github": "LilRam"
+  }

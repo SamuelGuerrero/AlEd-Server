@@ -11,7 +11,7 @@ const port = process.env.PORT || 8080;
 
 //Middleware
 app.use(express.json());
-const whiteList = ["http://localhost:3000", "https://aled-server.onrender.com"];
+const whiteList = ["http://localhost:3000", "https://al-ed.vercel.app"];
 
 app.use(
   express.json(),
