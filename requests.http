@@ -1,22 +1,47 @@
 ###
-POST http://localhost:8080/api/users HTTP/1.1
+POST http://localhost:8080/api/invitados HTTP/1.1
 Content-Type: application/json
 
-    {
-    "name": "Samuel Guerrero",
-    "profession": "Singer",
-    "urlImage": "https://i.postimg.cc/8Cc7X7SQ/Kevin.webp",
-    "age": 35,
-    "nationality": "Australiano",
-    "height": "1.74",
-    "telephoneNumber": "47-2614-7162",
-    "facebook": "Kevin Parker",
-    "twitter": "@tameimpala",
-    "github": "Kevin Parker"
+  {
+    "id": "58",
+    "status": "Entrando",
+    "urlImage": "https://i.postimg.cc/vTGVH3mw/MyQRCode58.png",
+    "name": "Invitado de Azarel"
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###
-GET http://localhost:8080/api/users HTTP/1.1
+GET http://localhost:8080/api/invitados HTTP/1.1
 
 ###
 GET http://localhost:8080/api/users/64825a93f6bf8745d10e66b7 HTTP/1.1

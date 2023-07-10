@@ -4,14 +4,14 @@ const cors = require("cors");
 
 require("dotenv").config();
 
-const userRoutes = require("./routes/users");
+const userRoutes = require("./routes/invitados");
 
 const app = express();
 const port = process.env.PORT || 8080;
 
 //Middleware
 app.use(express.json());
-const whiteList = ["http://localhost:3000", "https://al-ed.vercel.app"];
+const whiteList = ["http://localhost:3000", "https://al-ed.vercel.app" ,"192.168.2.1", "https://pool-party-invitation-onsn.vercel.app"];
 
 app.use(
   express.json(),
