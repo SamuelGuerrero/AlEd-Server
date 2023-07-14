@@ -3,45 +3,27 @@ POST http://localhost:8080/api/invitados HTTP/1.1
 Content-Type: application/json
 
   {
-    "id": "58",
+    "id": "79",
     "status": "Entrando",
-    "urlImage": "https://i.postimg.cc/vTGVH3mw/MyQRCode58.png",
-    "name": "Invitado de Azarel"
+    "urlImage": "https://i.postimg.cc/MT71L9PH/My-QRCode79.png",
+    "name": "Valeria Ramírez"
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ###
 GET http://localhost:8080/api/invitados HTTP/1.1
+
+###
+GET http://localhost:8080/api/invitados/buscar/28 HTTP/1.1
+
+
+
+
+
+
+
+
+
 
 ###
 GET http://localhost:8080/api/users/64825a93f6bf8745d10e66b7 HTTP/1.1

@@ -31,32 +31,11 @@ router.get("/invitados/:id", (req, res) => {
     .catch((error) => res.json({ message: error }));
 });
 
-//Update a user
-router.put("/users/:id", (req, res) => {
+// Get a users
+router.get("/invitados/buscar/:id", (req, res) => {
   const { id } = req.params;
-  const {
-    name,
-    profession,
-    urlImage,
-  } = req.body;
   invitadoSchema
-    .updateOne(
-      { _id: id },
-      {
-        $set: {
-          name,
-          profession,
-          urlImage,
-          age,
-          nationality,
-          height,
-          telephoneNumber,
-          facebook,
-          twitter,
-          github,
-        },
-      }
-    )
+    .find({id: id})
     .then((data) => res.json(data))
     .catch((error) => res.json({ message: error }));
 });
